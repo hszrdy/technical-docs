@@ -1,0 +1,50 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .codeblock {
+    background-color: #3e3e42;
+    border-radius: 10px;
+    width: 60%;
+  }
+  
+  header {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  p {
+    padding: 3px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  a:hover {
+    color: cyan;
+  }
+  
+  .main-section {
+    padding-top: 20px;
+  }
+  
+  .main-section:last-of-type {
+    padding-bottom: 20px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #main-doc {
+      margin-left: 300px;
+    }
+    #navbar {
+      position: fixed;
+      height: 100%;
+      border-right: solid;
+      width: 270px;
+    }
+  }

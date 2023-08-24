@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header id="nav-header">Java Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#JS_vs_Java">JS vs Java</a></li>
+        <li><a class="nav-link" href="#Data_Types_and_Variables">Data Types and Variables</a></li>
+        <li><a class="nav-link" href="#Loops_and_Iterations">Loops and Iterations</a></li>
+        <li><a class="nav-link" href="#Methods">Methods</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>Java is a Object-Oriented Programming language that has strongly typed syntax.
+        It is considered to be one of the most well-known programming language.</p>
+        <p>This documentation serves as an overview of the basic constructs in Java. It will cover:</p>
+
+        <ul>
+          <li>Data Types & Variables</li>
+          <li>Loops & Iterations</li>
+          <li>Methods</li>
+        </ul>
+
+        <p>There is no prerequisite requirements in reading this document. However, having previous experience in another programming language is good<br> as this document serves as a quickstart for Java and will not go deep into the details of the language.</p>
+        
+      </section>
+
+      <section id="JS_vs_Java" class="main-section">
+        <header>JS vs Java</header>
+
+        <p>Java and JavaScript are commonly mistaken to be the same programming language but in reality they are completely distinct programming language. <br>While they are both programming languages, JavaScript is not strongly-typed language unlike Java. Furthermore, JavaScript is dominantly used in web development.</p>
+
+        <p>There are more differences and similarities between the two languages that will not be listed here but it is important to distinguish the two languages as seperate.</p>
+      </section>
+
+      <section id="Data_Types_and_Variables" class="main-section">
+        <header>Data Types and Variables</header>
+
+        <p>Data types and variables are important as they serve as the containers of data we use in developing programs.</p>
+
+        <p>Creating variables in Java is done through the following syntax:</p>
+
+        <code>[data-type] [variable-name] = [value]</code>
+
+        <p>Like many other languages, there are multiple data types that Java supports such as:</p>
+
+        <div class="codeblock">
+          <ul>
+              <li><code>byte</code></li>
+              <li><code>boolean</code></li>
+              <li><code>char</code></li>
+              <li><code>int</code></li>
+              <li><code>String</code></li>
+              <li><code>float</code></li>
+              <li><code>double</code></li>
+              <li><code>long</code></li>
+              <li><code>short</code></li>
+          </ul>
+        </div>
+
+      <p>Example of declaring a variable with a data type of int:</p>
+      <code>int myIntegerVariable = 42;</code>
+
+      <p>There are also non-primitive data types but this document will not cover them.</p>
+
+      </section>
+
+      <section id="Loops_and_Iterations" class="main-section">
+        <header>Loops and Iterations</header>
+        <p>Loops & Iterations are important constructs in any programming language as it allows programmers to repeat certain lines of code without actually writing them many times.</p>
+
+        <p>A example of this is listing even numbers from the range of 1-100. While one may write every even number from that range, it is more convenient to write a loop to list every even number.</p>
+
+        <p>There are 3 main looping constructs in Java that a programmer may utilize for iterating. These are:</p>
+
+        <div class="codeblock">
+          <ul>
+            <li><code>for</code></li>
+            <li><code>while</code></li>
+            <li><code>do-while</code></li>
+          </ul>
+        </div>
+
+        <p>While these loops generally perform the same behavior which is iterating or loop certain lines of code. There might be circumstances where you might prefer to use one over the other.</p>
+        <p>Generally, <code>for</code> loops are used when there is a set known number of iterations you want to perform such as iterating up to 100 times.</p>
+
+        <p>Moving on to the <code>while</code> loop, this loop is commonly used to iterate with unclear number of times, usually iterating until a certain condition is fulfilled such as looping until a boolean is true.</p>
+
+        <p>Lastly, the <code>do-while</code> loop. This loop is almost the same as the previous loop construct however this loop is guaranteed to atleast run one time.</p>
+
+        <p>Syntax:</p>
+        <div class="codeblock">
+          <code>
+            for ([variable]; [condition]; [counter]) <br>{
+              <br>//code
+            <br>}
+            <br>
+            while ([condition]) <br>{
+              <br>//code
+            <br>}
+            <br>
+            do <br>{
+              <br>//code
+            <br>}
+            while([condition]);
+          </code>
+        </div>
+
+        <p>There is another form of iteration which is called Recursion but this document will not cover it.</p>
+      </section>
+
+      <section id="Methods" class="main-section">
+        <header>Methods</header>
+        <p>Methods are useful tools in programming. They allow groups of code to be reused in the program. Another common term for methods are functions. <br> Similar to mathematical functions, methods can take inputs and produce an output but unlike mathematical functions, methods are allowed to have no ouputs or inputs.</p>
+
+        <p>The general syntax for a method:</p>
+        <div class="codeblock">
+          <code>
+            [access-modifier] [method-type] [method-name] ([optional-arguments])<br>
+            {
+              <br>//code<br>
+              //return statement if method-type requires<br>
+            }
+          </code>
+        </div>
+
+        <p>As noticed above, methods can have a type which specifies what type of data they will return or output.<br> Methods can have primitive data types or non-primitive data types as its return-type/method-type. A special return-type called <code>void</code> specifies the method has no return-type.</p>
+
+      </section>
+      
+    </main>
+  </body>
+</html>
